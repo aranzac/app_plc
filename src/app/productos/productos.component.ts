@@ -1,28 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from '../compartido/producto';
 
-const VPRODUCTOS: Producto[] = [
 
+const VPRODUCTOS:Producto[] = [
   {
     id: 1,
     nombre: 'Producto 1',
     precio: 300,
-    imagen: '/assets/images/movil2.jpg'
+    imagen: '/assets/images/movil1.jpg'
   },
   {
-    id: 1,
+    id: 2,
     nombre: 'Producto 2',
     precio: 400,
     imagen: '/assets/images/movil2.jpg'
   },
   {
-    id: 1,
+    id: 3,
     nombre: 'Producto 3',
     precio: 500,
     imagen: '/assets/images/movil3.jpg'
   },
   {
-    id: 1,
+    id: 4,
     nombre: 'Producto 4',
     precio: 600,
     imagen: '/assets/images/movil4.jpg'
@@ -34,11 +34,16 @@ const VPRODUCTOS: Producto[] = [
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.scss']
 })
+
+
 export class ProductosComponent implements OnInit {
-  vProductos: Producto[] = VPRODUCTOS;
-  // productoSeleccionado = this.vProductos[0];
+
+  vProductos:Producto[] = VPRODUCTOS;
+  productoSeleccionado = this.vProductos[0];
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
+
 }

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+
 @Component({
-  selector: 'app-root', // Selector utilizado en index.html
-  templateUrl: './app.component.html', //  Código html a visualizar
-  styleUrls: ['./app.component.scss'] // Los estilos CSS a utilizar
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  // Exportar la clase del componente
-  title = 'app';
+  title = 'miAplicacion';
 }
