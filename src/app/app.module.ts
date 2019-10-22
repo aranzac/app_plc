@@ -14,9 +14,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { ProductosComponent } from './productos/productos.component';
+import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductosComponent],
+  declarations: [AppComponent, ProductosComponent, DetalleProductoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

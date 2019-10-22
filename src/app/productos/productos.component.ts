@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Producto } from '../compartido/producto';
 
 const VPRODUCTOS: Producto[] = [
+
   {
     id: 1,
     nombre: 'Producto 1',
@@ -35,9 +36,9 @@ const VPRODUCTOS: Producto[] = [
 })
 export class ProductosComponent implements OnInit {
   vProductos: Producto[] = VPRODUCTOS;
-  productoSeleccionado = this.vProductos[0];
+  // productoSeleccionado = this.vProductos[0];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }
